@@ -13,13 +13,15 @@ elif number < 0:
     lastdigit = (lastdigit * -1)
     # convert number to its original state i.e negative
     number *= -1
+    # checking if number is 0 then the last digit is 0
+elif number == 0:
+    lastdigit = 0
 
 if lastdigit > 5:
     print("Last digit of {} is {} and is \
 greater than 5".format(number, lastdigit))
 elif lastdigit == 0:
-    print("Last digit of {} is {} and \
-is 0".format(number, lastdigit))
+    print("Last digit of {} is {} and is 0".format(number, lastdigit))
 elif lastdigit != 0 and lastdigit < 6:
     print("Last digit of {} is {} and is less than \
 6 and not 0".format(number, lastdigit))
