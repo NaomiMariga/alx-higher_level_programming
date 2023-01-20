@@ -7,7 +7,6 @@ if __name__ == "__main__":
 '), default='hidden_4.pyc')
     args = parser.parse_args()
 
-    for line in args.filename:
-        for character in line:
-            if line[0] != "__":
-                print(line.strip())
+    for line in sorted(args.filename):
+        if not line.startswith("__"):
+            print(line.strip())
