@@ -3,7 +3,7 @@ def print_args(arguments):
     number = len(arguments)
 
     if number == 0:
-        print("{} arguments:".format(number))
+        print("{} arguments.".format(number))
     elif number == 1:
         print("{} argument:".format(number))
         print("{}: {}".format(number, arguments[0]))
